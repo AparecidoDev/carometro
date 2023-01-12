@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SenaiSchools.webApi</name>
+    </assembly>
+    <members>
+        <member name="M:SenaiSchools.webApi.Controllers.LoginController.Post(SenaiSchools.webApi.ViewModels.LoginViewModel)">
+            <summary>
+            Método que irá logar o usuário ao sistema com suas devidas permissões
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IAlunoRepository.CadastrarAluno(SenaiSchools.webApi.Domains.Aluno)">
+            <summary>
+            Cadastra um novo Aluno
+            </summary>
+            <param name="NovoAluno">Obejto NovoAluno que será casdatrado</param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IAlunoRepository.AtualizarAluno(System.Int32,SenaiSchools.webApi.Domains.Aluno)">
+            <summary>
+            Atualiza um Aluno Existente 
+            </summary>
+            <param name="id">Id do Aluno que será Atualizado</param>
+            <param name="AlunoAtualizado"></param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IAlunoRepository.ListarAlunos">
+            <summary>
+            Lista todos os Alunos
+            </summary>
+            <returns>Lista de Alunos</returns>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IAlunoRepository.DeletarAluno(System.Int32)">
+            <summary>
+            Deleta um Aluno existente
+            </summary>
+            <param name="id">ID do Aluno que será deletado</param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.ISalaRepository.CadastrarSala(SenaiSchools.webApi.Domains.Sala)">
+            <summary>
+            Cadastra uma nova Sala
+            </summary>
+            <param name="NovaSala">Obejto NovoUsuario que será casdatrado</param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.ISalaRepository.AtualizarSala(System.Int32,SenaiSchools.webApi.Domains.Sala)">
+            <summary>
+            Atualiza uma Sala Existente 
+            </summary>
+            <param name="id">Id da Sala que será Atualizada</param>
+            <param name="SalaAtualizada"></param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.ISalaRepository.ListarSalas">
+            <summary>
+            Lista todos as Salas
+            </summary>
+            <returns>Lista de Salas</returns>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.ISalaRepository.DeletarSala(System.Int32)">
+            <summary>
+            Deleta uma Sala existente
+            </summary>
+            <param name="id">ID da Sala que será deletada</param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IUsuarioRepository.CadastrarUsuario(SenaiSchools.webApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo Usuário
+            </summary>
+            <param name="NovoUsuario">Obejto NovoUsuario que será casdatrado</param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IUsuarioRepository.AtualizarUsuario(System.Int32,SenaiSchools.webApi.Domains.Usuario)">
+            <summary>
+            Atualiza um Usuario Existente 
+            </summary>
+            <param name="id">Id do Usuário que será Atualizado</param>
+            <param name="UsuarioAtualizado"></param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Um usuário buscado</returns>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Lista de usuários</returns>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IUsuarioRepository.DeletarUsuario(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+        </member>
+        <member name="M:SenaiSchools.webApi.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Valida o Usuário
+            </summary>
+            <param name="email">Email do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>objeto do usuario que foi buscado</returns>
+        </member>
+    </members>
+</doc>

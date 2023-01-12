@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "c4b3c64f-e9e6-4103-b9a4-d54adf72e68a",
+		"name": "Senai-Schools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuário",
+			"item": [
+				{
+					"name": "Usuario.Deletar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuario/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario.Login()",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"adm@email.com\",\r\n    \"senha\" : \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario.Cadastrar()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario.Atualizar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Priscilla\",\r\n    \"senha\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuario/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aluno",
+			"item": [
+				{
+					"name": "Aluno.Listar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/aluno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno.Cadastrar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSala\" : 2,\r\n    \"nomeAluno\" : \"Erika Leite\",\r\n    \"dataNascimento\" : \"12/03/1998\",\r\n    \"endereco\" : \"Rua Coimbra, 898\",\r\n    \"telefone\" : \"11928732232\",\r\n    \"email\" : \"erika@email.com\",\r\n    \"anoLetivo\" : \"2\",\r\n    \"re\" : \"276189\",\r\n    \"statusAluno\" : \"0\",\r\n    \"foto\" : \" \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/aluno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno.Deletar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/aluno/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno.Atualizar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSala\" : \"1\",\r\n    \"nomeAluno\" : \"Enzzo Lima Alves\",\r\n    \"endereco\" : \"rua Freijorge\",\r\n    \"telefone\" : \"11967416441\",\r\n    \"email\" : \"enzzolima@gmail.com\",\r\n    \"anoLetivo\" : \"1\",\r\n    \"re\" : \"283927\",\r\n    \"statusAluno\" : \"0\",\r\n    \"foto\" : \" \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/aluno/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"aluno",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sala",
+			"item": [
+				{
+					"name": "Sala.Cadastrar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Mecatrônica\",\r\n    \"numero\" : \"7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sala",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sala"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno.Listar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/sala",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sala"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno.Deletar()",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Aluno.Atualizar()",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMCIsInJvbGUiOiIwIiwiZXhwIjoxNjMyMzIxMjQ3LCJpc3MiOiJTZW5haS1TY2hvb2xzIiwiYXVkIjoiU2VuYWktU2Nob29scyJ9.xJklkgfNyM9JfDnMsQdNZBhDLZ7VeRuYPO6IjrS2sIM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Técnico em Multimídia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sala/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sala",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
